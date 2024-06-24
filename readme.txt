@@ -1,0 +1,1 @@
+i have done task-5 both q.no.1 and q.no.2 in a single file index.html and did all the loops to display the values.

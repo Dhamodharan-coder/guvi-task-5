@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task-5 question-1
+        var resume=[{
+    name : "Dhamodharan.M",
+    age : 22,
+    email : "dhamodharanmunusamy27@gmail.com",
+    phone: 8248438383,
+    dob: "27 April 2002",
+      address: {
+        streetAddress: "66/44 Bajanai Kovil Street",
+        village: "Thorapadi",
+        district: "Vellore",
+        state: "Tamilnadu",
+        country: "India"
+      },
+    education: [{
+        school:[{ 
+            sslc : {
+            school:"Spark Matriculation Hr.Sec school",
+            percentage: 86
+        },
+        hsc : {
+            school:"Spark Matriculation Hr.Sec school",
+             percentage: 55
+        }}]
+       ,
+       degree:[{
+        ug : {
+            domain: "BCA",
+            university: "VIT-Vellore",
+             percentage: 78
+            
+        },
+        pg : {
+            domain: "MCA",
+            university: "VIT-Vellore",
+             percentage: 7.4
+        }}]
+        
+}],
+ skills: ["HTML", "CSS", "JAVASCRIPT", "MONGODB", "NODEJS", "EXPRESSJS", "REACTJS", "GIT and GITHUB"],
+ projects : `1. build a restaurant website using html,css,js
+ 2.cloned many websites and responsive`,
+ companies: [{
+    tcs:{
+        year: 2016,
+        experience: "4yrs"
+    },
+    zoho:{
+        year: 2020,
+        experience: "3yrs"
+    },
+    guvi:{
+        year: 2024,
+        experience: "1yrs"
+    }
+ }]
+
+}];
+
+//task-5 question-2
+//for in method 
+for(let key in resume){
+    console.log(resume[key]);
+}
+//for of method 
+for(let key of resume){
+    console.log(key);
+}
+//for loop method
+for(let i=0; i<resume.length;i++){
+    console.log(resume[i]);
+}
+//for each method
+resume.forEach((data)=>{
+    console.log(data);
+})
+    </script>
+</body>
+</html>
